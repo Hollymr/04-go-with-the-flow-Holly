@@ -14,17 +14,38 @@ namespace _04_go_with_the_flow_Holly
             Console.WriteLine("Are you happy?");
             string answer = Console.ReadLine();
 
-            if (answer.ToLower() == "yes") 
+            if (answer.ToLower() == "yes")
             {
                 Console.WriteLine("The End.");
             }
 
-            else 
+            else
             {
+                while (answer.ToLower() == ("no"))
                 Console.WriteLine("Get another cat!");
-                
+              
+               
             }
-            Console.ReadKey();
+
+            //static bool NoCat;
+           // {
+              //  string answer = Console.ReadLine();
+
+               // while (!(answer.ToLower() == "no")) ;
+               // {
+               //     Console.WriteLine("Type yes or no");
+               //     answer = Console.ReadLine();
+                //}
+               // if (answer.ToLower() == "no")
+               // {
+                //    return true;
+              //  }
+
+
+                Console.ReadKey();
+        
+
+         
         }
     }
 }
