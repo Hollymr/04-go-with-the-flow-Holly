@@ -12,40 +12,53 @@ namespace _04_go_with_the_flow_Holly
         {
 
             Console.WriteLine("Are you happy?");
+            Console.WriteLine("Type yes or no.");
             string answer = Console.ReadLine();
 
-            if (answer.ToLower() == "yes")
+            if (answer.ToLower() == ("yes"))
             {
+
                 Console.WriteLine("The End.");
             }
 
             else
             {
-                while (answer.ToLower() == ("no"))
-                Console.WriteLine("Get another cat!");
-              
-               
+                
+                    while (!(answer.ToLower() == ("yes")))
+                    Console.WriteLine("Get another cat!");
+
             }
 
-            //static bool NoCat;
-           // {
-              //  string answer = Console.ReadLine();
+            Console.ReadKey();
 
-               // while (!(answer.ToLower() == "no")) ;
-               // {
-               //     Console.WriteLine("Type yes or no");
-               //     answer = Console.ReadLine();
-                //}
-               // if (answer.ToLower() == "no")
-               // {
-                //    return true;
-              //  }
-
-
-                Console.ReadKey();
-        
-
-         
         }
+
+
+
+ //       static bool GetYesorNo()
+//        {
+//            string answer = Console.ReadLine();
+//
+//            while (!(answer.ToLower() == "yes" || answer.ToLower() == "no"))
+//            {
+//                answer = Console.ReadLine();
+//                Console.WriteLine("Please state yes or no.");
+//
+//                if (answer.ToLower() == "yes")
+//                {
+//                    return true;
+//                }
+//
+//                else (answer.ToLower() == "no")               
+//                {
+//                    return false; 
+//                                      
+//                        
+ //               }
+//            }
+ //       }
+
+
     }
+
 }
