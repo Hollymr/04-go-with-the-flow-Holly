@@ -10,52 +10,69 @@ namespace _04_go_with_the_flow_Holly
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Are you happy?");
-            Console.WriteLine("Type yes or no.");
-            string answer = Console.ReadLine();
-
-            if (answer.ToLower() == ("yes"))
-            {
-
-                Console.WriteLine("The End.");
-            }
-
-            else
+            Console.WriteLine("Cat Lady Flow Chart.");
+            while (true)
             {
                 
-                    while (!(answer.ToLower() == ("yes")))
-                    Console.WriteLine("Get another cat!");
+                Console.WriteLine("Are you happy?");
+                Console.WriteLine("Type yes or no.");
+                string answer = Console.ReadLine();
 
+
+                if (answer.ToLower() == ("yes"))
+              
+                {
+                   Console.WriteLine("The End.");
+
+                    break;
+
+                    //while (!(answer.ToLower() == ("yes")))
+                   
+                    
+                }
+
+                else
+                {
+
+                    //while (!(answer.ToLower() == ("yes")))
+
+                    {
+                        Console.WriteLine("Get another cat!");
+                        Console.WriteLine("Please Press any key to continue");
+
+                    }
+
+                    
+                }
+
+                Console.ReadKey();
             }
-
-            Console.ReadKey();
 
         }
 
 
 
- //       static bool GetYesorNo()
-//        {
-//            string answer = Console.ReadLine();
+  //      static bool YesorNo()
+  //      {
+  //          string answer = Console.ReadLine();
+  //
+  //          while (!(answer.ToLower() == "yes" || answer.ToLower() == "no"))
+   //         {
+   //             answer = Console.ReadLine();
+   //             Console.WriteLine("Please state yes or no.");
 //
-//            while (!(answer.ToLower() == "yes" || answer.ToLower() == "no"))
-//            {
-//                answer = Console.ReadLine();
-//                Console.WriteLine("Please state yes or no.");
-//
-//                if (answer.ToLower() == "yes")
-//                {
-//                    return true;
-//                }
-//
-//                else (answer.ToLower() == "no")               
-//                {
-//                    return false; 
-//                                      
-//                        
+   //             if (answer.ToLower() == "yes")
+  //              {
+  //                  return true;
  //               }
-//            }
+ //
+ //               else (answer.ToLower() == "no")
+ //               {
+ //                   return false;
+ //
+ //
+ //               }
+ //           }
  //       }
 
 
